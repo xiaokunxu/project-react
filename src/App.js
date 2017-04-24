@@ -17,9 +17,9 @@ AV.init({
 var TestObject = AV.Object.extend('TestObject');
 var testObject = new TestObject();
 testObject.save({
-    words: 'Hello World!'
+    words: 'Hi!'
 }).then(function(object) {
-    alert('LeanCloud Rocks!');
+    alert('Hello Leancloud');
 })
 class App extends Component {
     constructor(props) {
