@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './UserDialog.css'
 
 export default class UserDialog extends Component {
     render() {
@@ -29,7 +30,8 @@ export default class UserDialog extends Component {
             /div> <
             div className = "row actions" >
             <
-            button type = "submit" > 注册 < /button> < /
+            button type = "submit"
+            className = "btn" > 注册 < /button> < /
             div > <
             /form> <
             form className = "signIn" > { /*登录*/ } <
@@ -47,7 +49,8 @@ export default class UserDialog extends Component {
             /div> <
             div className = "row actions" >
             <
-            button type = "submit" > 登录 < /button> < /
+            button type = "submit"
+            className = "btn" > 登录 < /button> < /
             div > <
             /form> < /
             div > <
