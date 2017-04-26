@@ -12,17 +12,20 @@
 .UserDialog {
     border: 1px solid #aaa;
     border-radius: 4px;
-    min-width: 20em;
-    background: #fff;
+    /*min-width: 20em;*/
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1em hsla(0, 0%, 0%, 0.15);
 }
 
 .UserDialog>nav:first-child {
-    padding: 1em;
+    padding-bottom: 1em;
     text-align: center;
 }
 
-.UserDialog>nav:first-child input[type=radio]:not(:first-child) {
+.UserDialog>nav:first-child label {
     margin-left: 2em;
+    cursor: pointer;
 }
 
 .UserDialog>panes {
