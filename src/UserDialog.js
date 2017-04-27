@@ -14,6 +14,20 @@ export default class UserDialog extends Component {
         })
     }
     render() {
+        let signUpForm = ( <
+            label > <
+            input type = "radio"
+            value = "signUp"
+            checked = { this.state.selected === 'signUp' }
+            /> 注册 </label >
+        )
+        let signInForm = ( <
+            label > <
+            input type = "radio"
+            value = "signIn"
+            checked = { this.state.selected === 'signIn' }
+            / > 登录 </label >
+        )
         return ( <
             div className = "UserDialog-Wrapper" >
             <
@@ -21,20 +35,9 @@ export default class UserDialog extends Component {
             <
             nav onChange = { this.switch.bind(this) } >
             <
-            label > <
-            input type = "radio"
-            value = "signUp"
-            checked = { this.state.selected === 'signUp' }
-            /> 注册 </label >
-            <
-            label > <
-            input type = "radio"
-            value = "signIn"
-            checked = { this.state.selected === 'signIn' }
-            / > 登录 </label > < /
+            /
             nav > <
-            div className = "panes" >
-            <
+            div className = "panes" > { this.state.selected === 'signUp' ? signUpForm : null } { this.state.selected === 'signIn' ? signInForm : null } <
             form className = "signUp" > { /*注册*/ } <
             div className = "row" >
             <
